@@ -2,8 +2,8 @@ require 'rails_helper'
 
 RSpec.describe 'items' do
 
-  let!(:todo) { FactoryGirl.create(:todo) }
-  let!(:item) { FactoryGirl.create(:item, todo: todo) }
+  let!(:todo) { FactoryBot.create(:todo) }
+  let!(:item) { FactoryBot.create(:item, todo: todo) }
 
   describe 'GET /todos/n/items' do
 

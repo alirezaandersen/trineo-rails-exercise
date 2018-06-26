@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'todos' do
 
-  let!(:todo) { FactoryGirl.create(:todo) }
+  let!(:todo) { FactoryBot.create(:todo) }
 
   describe 'GET /todos' do
 
