@@ -7,6 +7,10 @@ module Api
           render json: Todo.items_completed
         end
 
+        def not_completed
+          render json: Todo.where(completed: false)
+        end
+
       end
     end
   end
