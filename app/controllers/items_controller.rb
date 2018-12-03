@@ -21,6 +21,7 @@ class ItemsController < ApplicationController
     @todo = Todo.find(params[:todo_id])
     @item = @todo.items.find(params[:id])
     @item.update(item_params)
+    @item.task_status
     render(json: @item)
   end
 
